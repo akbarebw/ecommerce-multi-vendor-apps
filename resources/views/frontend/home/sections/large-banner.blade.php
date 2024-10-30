@@ -5,7 +5,8 @@
                 @if ($homepage_secion_banner_four->banner_one->status == 1)
 
                 <a href="{{$homepage_secion_banner_four->banner_one->banner_url}}">
-                    <img class="img-gluid" src="{{asset($homepage_secion_banner_four->banner_one->banner_image)}}" alt="">
+                    <img class="img-gluid lg-banner"
+                        src="{{asset($homepage_secion_banner_four->banner_one->banner_image)}}" alt="">
                 </a>
                 @endif
             </div>
