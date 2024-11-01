@@ -80,7 +80,7 @@ p {
 
 .common_btn:hover {
     color: #fff;
-    background: rgb(2, 82, 122);
+    background: #740938;
 }
 
 .see_btn {
@@ -154,7 +154,7 @@ p {
 
 .add_cart:hover {
     color: #fff;
-    background: rgb(2, 82, 122);
+    background: #af1740;
 }
 
 /*======================
@@ -2855,7 +2855,7 @@ SCROLL BUTTON START
 
 .wsus__scroll_btn:hover {
     color: #fff;
-    background: rgb(2, 82, 122);
+    background: #af1740;
 }
 
 /*======================
@@ -2873,7 +2873,7 @@ BREADCRUMB START
 }
 
 .wsus_breadcrumb_overlay {
-    background: #740938c9;
+    background: #525252c9;
     padding: 100px 0px;
 }
 
@@ -3597,7 +3597,7 @@ PRODUCT DETAILS START
 .wsus_pro_det_color,
 .wsus_pro__det_size,
 .share_link,
-.wsus__quentity,
+.wsus__quantity,
 .wsus__button_area,
 .wsus__pro_det_share,
 .wsus__selectbox {
@@ -3610,10 +3610,10 @@ PRODUCT DETAILS START
 .wsus_pro_det_color h5,
 .wsus_pro__det_size h5,
 .share_link h5,
-.wsus__quentity h5,
+.wsus__quantity h5,
 .wsus__button_area h5,
 .wsus__pro_det_share h5,
-.wsus__quentity h5,
+.wsus__quantity h5,
 .wsus__selectbox h5 {
     text-transform: capitalize;
     font-weight: 400;
@@ -3719,7 +3719,7 @@ PRODUCT DETAILS START
     color: #cc2b52;
 }
 
-.wsus__quentity h3 {
+.wsus__quantity h3 {
     font-size: 22px;
     font-weight: 600;
     margin-left: 20px;
@@ -4896,7 +4896,7 @@ INVOICE PAGE SATAR
     width: 229px;
 }
 
-.wsus__invoice_description .quentity {
+.wsus__invoice_description .quantity {
     width: 225px;
 }
 
@@ -7586,7 +7586,7 @@ PAYMENT PAGE  START
 
 .wsus__pay_info_area .nav-pills .nav-link.active,
 .wsus__pay_info_area .nav-pills .nav-link:hover {
-    background: rgb(2, 82, 122);
+    background: #af1740;
 }
 
 .wsus__pay_info_area .tab-pane {
@@ -9375,7 +9375,7 @@ DASHBOARD CHAT END
     border-color: #dc3545;
 }
 
-.wsus__quentity h3 span {
+.wsus__quantity h3 span {
     margin-left: 5px;
     display: inline-block;
     font-size: 23px;

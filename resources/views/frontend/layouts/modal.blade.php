@@ -5,10 +5,10 @@
         <div class="col-xl-6 col-12 col-sm-10 col-md-8 col-lg-6 m-auto display">
             <div class="wsus__quick_view_img">
                 @if ($product->video_link)
-                    <a class="venobox wsus__pro_det_video" data-autoplay="true" data-vbtype="video"
-                        href="{{$product->video_link}}">
-                        <i class="fas fa-play"></i>
-                    </a>
+                <a class="venobox wsus__pro_det_video" data-autoplay="true" data-vbtype="video"
+                    href="{{$product->video_link}}">
+                    <i class="fas fa-play"></i>
+                </a>
                 @endif
                 <div class="row modal_slider">
                     <div class="col-xl-12">
@@ -26,25 +26,24 @@
                 <a class="title" href="#">{{limitText($product->name, 150)}}</a>
                 <p class="wsus__stock_area"><span class="in_stock">in stock</span> (167 item)</p>
                 @if (checkDiscount($product))
-                    <h4>{{$settings->currency_icon}}{{$product->offer_price}} <del>{{$settings->currency_icon}}{{$product->price}}</del></h4>
+                <h4>{{$settings->currency_icon}}{{$product->offer_price}}
+                    <del>{{$settings->currency_icon}}{{$product->price}}</del></h4>
                 @else
-                    <h4>{{$settings->currency_icon}}{{$product->price}}</h4>
+                <h4>{{$settings->currency_icon}}{{$product->price}}</h4>
                 @endif
                 <p class="review">
-                @php
+                    @php
                     $avgRating = $product->reviews()->avg('rating');
                     $fullRating = round($avgRating);
-                @endphp
+                    @endphp
 
-                @for ($i = 1; $i <= 5; $i++)
-                    @if ($i <= $fullRating)
-                    <i class="fas fa-star"></i>
-                    @else
-                    <i class="far fa-star"></i>
-                    @endif
-                @endfor
+                    @for ($i = 1; $i <= 5; $i++) @if ($i <=$fullRating) <i class="fas fa-star"></i>
+                        @else
+                        <i class="far fa-star"></i>
+                        @endif
+                        @endfor
 
-                <span>({{count($product->reviews)}} review)</span>
+                        <span>({{count($product->reviews)}} review)</span>
                 </p>
                 <p class="description">{!! limitText($product->short_description, 200) !!}</p>
 
@@ -59,7 +58,8 @@
                                 <select class="select_2" name="variants_items[]">
                                     @foreach ($variant->productVariantItems as $variantItem)
                                     @if ($variantItem->status != 0)
-                                        <option value="{{$variantItem->id}}" {{$variantItem->is_default == 1 ? 'selected' : ''}}>{{$variantItem->name}} (${{$variantItem->price}})</option>
+                                    <option value="{{$variantItem->id}}" {{$variantItem->is_default == 1 ? 'selected' :
+                                        ''}}>{{$variantItem->name}} (${{$variantItem->price}})</option>
                                     @endif
                                     @endforeach
                                 </select>
@@ -70,8 +70,8 @@
                         </div>
                     </div>
 
-                    <div class="wsus__quentity">
-                        <h5>quentity :</h5>
+                    <div class="wsus__quantity">
+                        <h5>quantity :</h5>
                         <div class="select_number">
                             <input class="number_area" name="qty" type="text" min="1" max="100" value="1" />
                         </div>
@@ -81,7 +81,8 @@
                     <ul class="wsus__button_area">
                         <li><button type="submit" class="add_cart" href="#">add to cart</button></li>
 
-                        <li><a href="" class="add_to_wishlist" data-id="{{$product->id}}"><i class="fal fa-heart"></i></a></li>
+                        <li><a href="" class="add_to_wishlist" data-id="{{$product->id}}"><i
+                                    class="fal fa-heart"></i></a></li>
                         {{-- <li><a href="#"><i class="far fa-random"></i></a></li> --}}
                     </ul>
                 </form>

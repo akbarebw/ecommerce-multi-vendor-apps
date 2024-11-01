@@ -2,6 +2,16 @@
 
 ## UNRELEASED
 
+## v11.3.0 - 2024-10-09
+
+- fix: `phpoffice/phpspreadsheet` vulnerabilities #64
+
+## v11.2.0 - 2024-09-02
+
+- fix: CVE-2024-45046 #63
+- fix: #62 
+- fix: yajra/laravel-datatables#3173
+
 ## v11.1.1 - 2024-04-29
 
 - fix: pestphp require-dev #61

@@ -311,7 +311,7 @@
 
     /* INVOICE PAGE START */
     .wsus__invoice_description .amount,
-    .wsus__invoice_description .quentity,
+    .wsus__invoice_description .quantity,
     .wsus__invoice_description .total {
         width: 15% !important;
     }
@@ -343,7 +343,7 @@
 
     /* DASHBOARD START */
     .dashboard_sidebar {
-        width: 22%;
+        width: 15%;
     }
 
     .wsus__message_img {
@@ -364,7 +364,7 @@
     }
 
     .dashboard_content .wsus__invoice_description .amount,
-    .dashboard_content .wsus__invoice_description .quentity,
+    .dashboard_content .wsus__invoice_description .quantity,
     .dashboard_content .wsus__invoice_description .total {
         width: 117px;
     }
@@ -943,7 +943,7 @@
 
     /* INVOICE PAGE START */
     .wsus__invoice_description .amount,
-    .wsus__invoice_description .quentity,
+    .wsus__invoice_description .quantity,
     .wsus__invoice_description .total {
         width: 120px;
     }
@@ -1821,7 +1821,7 @@
         width: 130px;
     }
 
-    .wsus__invoice_description .quentity {
+    .wsus__invoice_description .quantity {
         width: 130px;
     }
 
@@ -2022,7 +2022,7 @@
         width: 160px;
     }
 
-    .dashboard_content .wsus__invoice_description .quentity {
+    .dashboard_content .wsus__invoice_description .quantity {
         width: 160px;
     }
 
@@ -2711,7 +2711,7 @@
         margin-top: 5px;
     }
 
-    .wsus__quentity {
+    .wsus__quantity {
         flex-wrap: wrap;
     }
 
@@ -3169,7 +3169,7 @@
         width: 100px;
     }
 
-    .wsus__invoice_description .quentity {
+    .wsus__invoice_description .quantity {
         width: 100px;
     }
 
@@ -4148,10 +4148,10 @@
     .wsus_pro_det_color h5,
     .wsus_pro__det_size h5,
     .share_link h5,
-    .wsus__quentity h5,
+    .wsus__quantity h5,
     .wsus__button_area h5,
     .wsus__pro_det_share h5,
-    .wsus__quentity h5,
+    .wsus__quantity h5,
     .wsus__selectbox h5 {
         width: auto;
         margin-right: 10px;
@@ -4161,7 +4161,7 @@
         margin-top: 5px;
     }
 
-    .wsus__quentity {
+    .wsus__quantity {
         flex-wrap: wrap;
     }
 
@@ -4169,16 +4169,16 @@
         margin-top: 5px;
     }
 
-    .wsus__quentity h3 {
+    .wsus__quantity h3 {
         font-size: 18px;
         margin-left: 5px;
     }
 
-    .wsus__quentity button {
+    .wsus__quantity button {
         font-size: 16px;
     }
 
-    .wsus__quentity .nice-number input {
+    .wsus__quantity .nice-number input {
         font-size: 16px;
     }
 
@@ -4776,7 +4776,7 @@
         width: 100px;
     }
 
-    .wsus__invoice_description .quentity {
+    .wsus__invoice_description .quantity {
         width: 100px;
     }
 
