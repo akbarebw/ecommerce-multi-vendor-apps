@@ -301,7 +301,7 @@ p {
 ========================*/
 header {
     width: 100%;
-    background: #cc2b52;
+    background: #fff;
     padding: 19px 0px;
     height: 90px;
     border-bottom: 1px solid #fff;
@@ -365,6 +365,7 @@ header {
     width: 100%;
     padding: 14px 20px;
     font-weight: 400;
+    background: #efefef;
 }
 
 .wsus__search button {
@@ -403,14 +404,14 @@ header {
     /* color: #333; */
     margin-right: 10px;
     font-size: 40px;
-    color: #fff;
+    color: #3b3b3b;
 }
 
 .wsus__call_text p {
     text-transform: capitalize;
     font-weight: 500;
     font-size: 15px;
-    color: #fff;
+    color: #3b3b3b;
 }
 
 .wsus__call_text a {
