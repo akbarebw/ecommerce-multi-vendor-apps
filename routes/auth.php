@@ -10,13 +10,34 @@ use App\Http\Controllers\Auth\PasswordResetLinkController;
 use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\Auth\VerifyEmailController;
 use App\Http\Controllers\Backend\AdminController;
+use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-
+use Laravel\Socialite\Facades\Socialite;
+use Illuminate\Support\Str;
 Route::middleware('guest')->group(function () {
     // Route::get('register', [RegisteredUserController::class, 'create'])
     //             ->name('register');
 
     Route::get('admin/login', [AdminController::class, 'login'])->name('admin.login');
+
+    Route::get('/auth/redirect', function () {
+        return Socialite::driver('google')->redirect();
+    })->name('google.login');
+    
+    Route::get('/auth/callback', function () {
+        $user = Socialite::driver('google')->user();
+        dd($user);
+        // $user = User::firstOrCreate([
+        //     'email' => $user->email
+        // ],
+        // [
+        //     'name' => $user->name,
+        //     'password'=> bcrypt(Str::random(24))
+        // ]);
+        // Auth::login($user, true);
+        // return redirect()->route('home');
+    });
 
     Route::post('register', [RegisteredUserController::class, 'store'])->name('register');
 

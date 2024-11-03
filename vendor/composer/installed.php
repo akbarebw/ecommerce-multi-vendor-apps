@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'c755212d710dcd4cd14ce8698c338eff2433903b',
+        'reference' => '04543cffa4d75793d18846c35895b20da88b97a7',
         'name' => 'laravel/laravel',
         'dev' => true,
     ),
@@ -120,6 +120,15 @@
             'aliases' => array(),
             'reference' => 'befcdc0e5dce67252aa6322d82424be928214fa2',
             'dev_requirement' => true,
+        ),
+        'firebase/php-jwt' => array(
+            'pretty_version' => 'v6.10.1',
+            'version' => '6.10.1.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../firebase/php-jwt',
+            'aliases' => array(),
+            'reference' => '500501c2ce893c824c801da135d02661199f60c5',
+            'dev_requirement' => false,
         ),
         'fruitcake/php-cors' => array(
             'pretty_version' => 'v1.3.0',
@@ -418,7 +427,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'c755212d710dcd4cd14ce8698c338eff2433903b',
+            'reference' => '04543cffa4d75793d18846c35895b20da88b97a7',
             'dev_requirement' => false,
         ),
         'laravel/pint' => array(
@@ -464,6 +473,15 @@
             'install_path' => __DIR__ . '/../laravel/serializable-closure',
             'aliases' => array(),
             'reference' => '1dc4a3dbfa2b7628a3114e43e32120cce7cdda9c',
+            'dev_requirement' => false,
+        ),
+        'laravel/socialite' => array(
+            'pretty_version' => 'v5.16.0',
+            'version' => '5.16.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../laravel/socialite',
+            'aliases' => array(),
+            'reference' => '40a2dc98c53d9dc6d55eadb0d490d3d72b73f1bf',
             'dev_requirement' => false,
         ),
         'laravel/tinker' => array(
@@ -527,6 +545,15 @@
             'install_path' => __DIR__ . '/../league/mime-type-detection',
             'aliases' => array(),
             'reference' => '2d6702ff215bf922936ccc1ad31007edc76451b9',
+            'dev_requirement' => false,
+        ),
+        'league/oauth1-client' => array(
+            'pretty_version' => 'v1.10.1',
+            'version' => '1.10.1.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../league/oauth1-client',
+            'aliases' => array(),
+            'reference' => 'd6365b901b5c287dd41f143033315e2f777e1167',
             'dev_requirement' => false,
         ),
         'livewire/livewire' => array(
@@ -670,6 +697,24 @@
             'reference' => 'a49b947c0c109f4fd112f9b5c6d6cb3e6baf8b50',
             'dev_requirement' => false,
         ),
+        'paragonie/constant_time_encoding' => array(
+            'pretty_version' => 'v3.0.0',
+            'version' => '3.0.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../paragonie/constant_time_encoding',
+            'aliases' => array(),
+            'reference' => 'df1e7fde177501eee2037dd159cf04f5f301a512',
+            'dev_requirement' => false,
+        ),
+        'paragonie/random_compat' => array(
+            'pretty_version' => 'v9.99.100',
+            'version' => '9.99.100.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../paragonie/random_compat',
+            'aliases' => array(),
+            'reference' => '996434e5492cb4c3edcb9168db6fbb1359ef965a',
+            'dev_requirement' => false,
+        ),
         'paragonie/sodium_compat' => array(
             'pretty_version' => 'v2.1.0',
             'version' => '2.1.0.0',
@@ -731,6 +776,15 @@
             'install_path' => __DIR__ . '/../phpoption/phpoption',
             'aliases' => array(),
             'reference' => 'e3fac8b24f56113f7cb96af14958c0dd16330f54',
+            'dev_requirement' => false,
+        ),
+        'phpseclib/phpseclib' => array(
+            'pretty_version' => '3.0.42',
+            'version' => '3.0.42.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../phpseclib/phpseclib',
+            'aliases' => array(),
+            'reference' => 'db92f1b1987b12b13f248fe76c3a52cadb67bb98',
             'dev_requirement' => false,
         ),
         'phpunit/php-code-coverage' => array(
@@ -889,8 +943,8 @@
         'psr/log-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '3.0.0',
-                1 => '1.0|2.0|3.0',
+                0 => '1.0|2.0|3.0',
+                1 => '3.0.0',
             ),
         ),
         'psr/simple-cache' => array(
